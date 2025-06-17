@@ -122,46 +122,53 @@ int main() {
         }else if(habitantes2 > habitantes1){
             printf("Carta 2 venceu!\n");
         }else{
-            printf("Houve um empate!\n");
+            printf("Houve um empate entre as Cartas!\n");
         }
         break;  
     case 3:
         printf("3. Área:\n");
         if(area1 > area2){
             printf("Carta 1 venceu!\n");
+        }else if(area2 > area1){
+             printf("Carta 2 venceu!\n");
         }else{
-            printf("Carta 2 venceu!\n");
+            printf("Houve um empate entre as Cartas!\n");
         }
         break;
     case 4:
         printf("4. PIB\n");
         if(pib1 > pib2){
             printf("Carta 1 venceu!\n");
-        }else{
+        }else if( pib2 > pib1){
             printf("Carta 2 venceu!\n");
+        }else{
+            printf("Houve um empate entre as Cartas!\n");
         }
         break;
     case 5:
         printf("5. Número de pontos turísticos:\n");
-        if(pib1 > pib2){
+        if(pontosTuristicos1 > pontosTuristicos2){
             printf("Carta 1 venceu!\n");
-        }else{
+        }else if (pontosTuristicos2 > pontosTuristicos1) {
             printf("Carta 2 venceu!\n");
+        }else{
+            printf("Houve um empate entre as Cartas!\n");
         }
         break;
     case 6:
         printf("6. Densidade demográfica:\n");
         if(densidade1 < densidade2){
             printf("Carta 1 venceu!\n");
-        }else{
+        }else if(densidade2 < densidade1) {
             printf("Carta 2 venceu!\n");
+        }else{
+            printf("Houve um empate entre as Cartas!\n");
         }
         break;        
     default:
         printf("Opção inválida!\n");
         break;
-    }
-       
+    }   
 
 
     return 0;
