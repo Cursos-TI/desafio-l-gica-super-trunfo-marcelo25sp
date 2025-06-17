@@ -94,7 +94,7 @@ int main() {
     printf("Super Poder: %.2f\n", superPoder2);
 
 
-    // aqui está sendo criado o menu utilizando o switch - case
+    // aqui está sendo criado o menu de opções
     printf("\n");
     printf("------------------------------\n");
     printf("Menu de Comparação das Cartas\n");
@@ -104,7 +104,11 @@ int main() {
     printf("4- PIB:\n");
     printf("5- Número de pontos turísticos:\n");
     printf("6- Densidade demográfica:\n");
+    printf("---------------------------------\n");
+    printf("Digite a opção desejada: ");
+    scanf("%d", &opcao);
 
+    // utilizando a estrutura switch-case(escolha da opção) alinhado com a estrutura if-else (determinar a Carta vencedora)
     switch (opcao)
     {
     case 1:
@@ -120,13 +124,44 @@ int main() {
         }else{
             printf("Houve um empate!\n");
         }
-        break;    
+        break;  
+    case 3:
+        printf("3. Área:\n");
+        if(area1 > area2){
+            printf("Carta 1 venceu!\n");
+        }else{
+            printf("Carta 2 venceu!\n");
+        }
+        break;
+    case 4:
+        printf("4. PIB\n");
+        if(pib1 > pib2){
+            printf("Carta 1 venceu!\n");
+        }else{
+            printf("Carta 2 venceu!\n");
+        }
+        break;
+    case 5:
+        printf("5. Número de pontos turísticos:\n");
+        if(pib1 > pib2){
+            printf("Carta 1 venceu!\n");
+        }else{
+            printf("Carta 2 venceu!\n");
+        }
+        break;
+    case 6:
+        printf("6. Densidade demográfica:\n");
+        if(densidade1 < densidade2){
+            printf("Carta 1 venceu!\n");
+        }else{
+            printf("Carta 2 venceu!\n");
+        }
+        break;        
     default:
+        printf("Opção inválida!\n");
         break;
     }
-    
-
-    
+       
 
 
     return 0;
