@@ -11,7 +11,7 @@ int main() {
     char estado1, estado2;
     char codigo1[8], codigo2[8];
     char nomeCidade1[30],nomeCidade2[30];
-    int pontosTuristicos1, pontosTuristicos2, resultado;
+    int pontosTuristicos1, pontosTuristicos2;
     float pib1, pib2, area1, area2, densidade1, densidade2, pibPerCapita1, pibPerCapita2; 
     unsigned long int habitantes1, habitantes2;
     float superPoder1, superPoder2;
@@ -97,28 +97,14 @@ int main() {
     printf("------------------------------\n");
     printf("Comparação das Cartas\n");
 
-    // utilizando a variável resultado para fazer o comparativo das 2 cartas
-
-    resultado = habitantes1 > habitantes2;
-    printf("População: Carta1 venceu Carta2? %d\n", resultado);
-
-    resultado = area1 > area2;
-    printf("Área: Carta1 venceu Carta2? %d\n", resultado);
-
-    resultado = pib1 > pib2;
-    printf("PIB: Carta1 venceu Carta2? %d\n", resultado);
-
-    resultado = pontosTuristicos1 > pontosTuristicos2;
-    printf("Pontos Turísticos: Carta1 venceu Carta2? %d\n", resultado);
-
-    resultado = densidade1 < densidade2;
-    printf("Densidade Demográfica: Carta1 venceu Carta2? %d\n", resultado);
-
-    resultado = pibPerCapita1 > pibPerCapita2;
-    printf("PIB per Capita: Carta1 venceu Carta2? %d\n", resultado);
-
-    resultado = superPoder1 > superPoder2;
-    printf("Supr Poder: Carta1 venceu Carta2? %d\n", resultado);
+    printf("População:\n");
+    printf("Carta 1 - %s (%c): %lu habitantes\n", nomeCidade1, estado1, habitantes1);
+    printf("Carta 2 - %s (%c): %lu habitantes\n", nomeCidade2, estado2, habitantes2);
+    if(habitantes1 > habitantes2){
+        printf("Carta 1 venceu!\n");
+    }else{
+        printf("Carta 2 venceu!\n");
+    }
 
     return 0;
 }
