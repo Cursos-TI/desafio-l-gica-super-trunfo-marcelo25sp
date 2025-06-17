@@ -101,9 +101,9 @@ int main() {
     printf("Carta 1 - %s (%c): %lu habitantes\n", nomeCidade1, estado1, habitantes1);
     printf("Carta 2 - %s (%c): %lu habitantes\n", nomeCidade2, estado2, habitantes2);
     if(habitantes1 > habitantes2){
-        printf("Carta 1 venceu!\n");
+        printf("Carta 1 (%s) venceu!\n", nomeCidade1);
     }else{
-        printf("Carta 2 venceu!\n");
+        printf("Carta 2 (%s) venceu!\n", nomeCidade2);
     }
 
     return 0;
