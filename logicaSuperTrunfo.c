@@ -303,9 +303,18 @@ int main() {
     } 
 }
     
-    
-
-
+    // nesse bloco está sendo executado a lógica para a definição da Carta vencedora utilizando as variaveis vitoriaCarta1 e vitoriaCarta2
+    printf("\n");
+    printf("----------------------------\n");
+    printf("Resultado Final\n");
+    printf("----------------------------\n");
+    if(vitoriaCarta1 > vitoriaCarta2){
+        printf("Carta 1 venceu!\n");
+    }else if(vitoriaCarta2 > vitoriaCarta1) {
+        printf("Carta 2 venceu!\n");
+    }else{
+        printf("Houve um empate entre as 2 Cartas!\n");
+    }
 
     return 0;
 }
