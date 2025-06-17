@@ -10,7 +10,7 @@ int main() {
 
     char estado1, estado2;
     char codigo1[8], codigo2[8];
-    char nomeCidade1[30],nomeCidade2[30];
+    char nomePais1[30],nomePais2[30];
     int pontosTuristicos1, pontosTuristicos2, opcao;
     float pib1, pib2, area1, area2, densidade1, densidade2, pibPerCapita1, pibPerCapita2; 
     unsigned long int habitantes1, habitantes2;
@@ -23,8 +23,8 @@ int main() {
     scanf(" %c", &estado1);
     printf("Código: ");
     scanf("%s", codigo1);
-    printf("Nome da cidade: ");
-    scanf("%s", nomeCidade1);
+    printf("Nome do País: ");
+    scanf("%s", nomePais1);
     printf("População: ");
     scanf("%lu", &habitantes1);
     printf("Área: ");
@@ -45,7 +45,7 @@ int main() {
     printf("Carta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
-    printf("Nome da Cidade: %s\n", nomeCidade1);
+    printf("Nome do País: %s\n", nomePais1);
     printf("População: %lu\n", habitantes1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
@@ -62,8 +62,8 @@ int main() {
     scanf(" %c", &estado2);
     printf("Código: ");
     scanf("%s", codigo2);
-    printf("Nome da cidade: ");
-    scanf("%s", nomeCidade2);
+    printf("Nome do País: ");
+    scanf("%s", nomePais2);
     printf("População: ");
     scanf("%lu", &habitantes2);
     printf("Área: ");
@@ -84,7 +84,7 @@ int main() {
     printf("Carta 2:\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
-    printf("Nome da Cidade: %s\n", nomeCidade2);
+    printf("Nome do País: %s\n", nomePais2);
     printf("População: %lu\n", habitantes2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
@@ -98,7 +98,7 @@ int main() {
     printf("\n");
     printf("------------------------------\n");
     printf("Menu de Comparação das Cartas\n");
-    printf("1- Nome da Cidade:\n");
+    printf("1- Nome do País:\n");
     printf("2- População::\n");
     printf("3- Área:\n");
     printf("4- PIB:\n");
@@ -108,8 +108,8 @@ int main() {
     switch (opcao)
     {
     case 1:
-        printf("\nCarta 1: %s\n", nomeCidade1);
-        printf("Carta 2: %s\n", nomeCidade2);
+        printf("\nCarta 1: %s\n", nomePais1);
+        printf("Carta 2: %s\n", nomePais2);
         break;
     case 2:
         printf("2- População:\n");
